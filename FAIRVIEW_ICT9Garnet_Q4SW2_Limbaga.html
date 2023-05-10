@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+</head>
+<body>
+	<h1>Time Converter</h1>
+	<hr>
+	Second : <input type="number" id="second" value="">
+	<hr>
+	<button onclick="s2m()">To Minutes</button>
+	<button onclick="s2h()">To Hours</button>
+	<button onclick="s2d()">To Days</button>
+	<hr>
+	Minute : <input type="number" id="minute" value="">
+	<hr>
+	<button onclick="m2s()">To Seconds</button>
+	<button onclick="m2h()">To Hours</button>
+	<button onclick="m2d()">To Days</button>
+	<hr>
+	Hour : <input type="number" id="hour" value="">
+	<hr>
+	<button onclick="h2s()">To Seconds</button>
+	<button onclick="h2m()">To Minutes</button>
+	<button onclick="h2d()">To Days</button>
+	<hr>
+	Day : <input type="number" id="day" value="">
+	<hr>
+	<button onclick="d2s()">To Seconds</button>
+	<button onclick="d2m()">To Minutes</button>
+	<button onclick="d2h()">To Hours</button>
+	<hr>
+</body>
+<script type="text/javascript">
+	let x;
+	let y;
+	function s2m(){
+		let x = parseInt(document.getElementById("second").value);
+		let y = 60;
+		alert(x / y);
+	}
+		function s2h(){
+		let x = parseInt(document.getElementById("second").value);
+		let y = 3600;
+		alert(x / y);
+	}
+			function s2d(){
+		let x = parseInt(document.getElementById("second").value);
+		let y = 86400;
+		alert(x / y);
+	}
+	function m2s(){
+		let x = parseInt(document.getElementById("minute").value);
+		let y = 60;
+		alert(x * y);
+	}
+		function m2h(){
+		let x = parseInt(document.getElementById("minute").value);
+		let y = 60;
+		alert(x / y);
+	}
+			function m2d(){
+		let x = parseInt(document.getElementById("minute").value);
+		let y = 1440;
+		alert(x / y);
+	}
+	function h2s(){
+		let x = parseInt(document.getElementById("hour").value);
+		let y = 3600;
+		alert(x * y);
+	}
+		function h2m(){
+		let x = parseInt(document.getElementById("hour").value);
+		let y = 60;
+		alert(x * y);
+	}
+			function h2d(){
+		let x = parseInt(document.getElementById("hour").value);
+		let y = 24;
+		alert(x / y);
+	}
+	function d2s(){
+		let x = parseInt(document.getElementById("day").value);
+		let y = 86400;
+		alert(x * y);
+	}
+		function d2m(){
+		let x = parseInt(document.getElementById("day").value);
+		let y = 1440;
+		alert(x * y);
+	}
+			function d2h(){
+		let x = parseInt(document.getElementById("day").value);
+		let y = 24;
+		alert(x * y);
+	}
+</script>
+</html>
